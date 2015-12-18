@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">UniversalCardReader</string>
+    <string name="app_name">Universal Card Reader</string>
+
+    <string name="guide_no_card">No card detected, tap the card to the back of your phone.</string>
+    <string name="guide_no_transaction">No transactions have been read.</string>
+    <string name="guide_no_log">No log have been record.</string>
 </resources>

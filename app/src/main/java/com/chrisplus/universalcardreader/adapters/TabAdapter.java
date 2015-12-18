@@ -17,8 +17,8 @@ import java.util.List;
 public class TabAdapter extends FragmentPagerAdapter {
 
     public static final int COUNT = 3;
-
     public static final String[] FRAGMENT_TITLES = {"CARD INFO", "Transactions", "LOGS"};
+
 
     private List<Fragment> fragments;
 
@@ -44,6 +44,7 @@ public class TabAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         return FRAGMENT_TITLES[position];
     }
+
 
     private void initFragments() {
         fragments = new ArrayList<>();

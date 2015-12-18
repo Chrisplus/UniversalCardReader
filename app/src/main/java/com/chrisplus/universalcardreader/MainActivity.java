@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         tintManager.setStatusBarTintEnabled(true);
 
         adapter = new TabAdapter(getSupportFragmentManager());
+
         viewpager.setAdapter(adapter);
         tabStrip.setViewPager(viewpager);
         tabStrip.setOnPageChangeListener(onPageChangeListener);

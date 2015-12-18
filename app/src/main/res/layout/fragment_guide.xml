@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <View
+            android:id="@+id/guide_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_300"
+            android:layout_marginLeft="96dp"
+            android:layout_marginRight="96dp"
+            android:layout_centerInParent="true"/>
+
+    <ImageView
+            android:id="@+id/guide_image"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_above="@id/guide_divider"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:src="@drawable/ic_card"/>
+
+    <TextView
+            android:id="@+id/guide_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/guide_divider"
+            android:gravity="center"
+            android:padding="16dp"
+            android:lines="2"
+            android:text="@string/guide_no_card"
+            android:textColor="@color/black_text_secondary"
+            android:textSize="18sp"
+            />
+</RelativeLayout>
