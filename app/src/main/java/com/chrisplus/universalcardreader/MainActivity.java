@@ -16,15 +16,17 @@ import android.support.v7.widget.Toolbar;
 public class MainActivity extends AppCompatActivity {
 
     private ViewPager viewpager;
+
     private PagerSlidingTabStrip tabStrip;
+
     private TabAdapter adapter;
+
     private SystemBarTintManager tintManager;
+
     private Toolbar toolBar;
-    private Drawable oldBackground = null;
-    private int currentColor;
 
-
-    private final ViewPager.OnPageChangeListener onPageChangeListener = new ViewPager.OnPageChangeListener() {
+    private final ViewPager.OnPageChangeListener onPageChangeListener
+            = new ViewPager.OnPageChangeListener() {
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
@@ -81,18 +83,11 @@ public class MainActivity extends AppCompatActivity {
         tintManager.setTintColor(newColor);
 
         Drawable colorDrawable = new ColorDrawable(newColor);
-        Drawable bottomDrawable = new ColorDrawable(getResources().getColor(android.R.color.transparent));
-
+        Drawable bottomDrawable = new ColorDrawable(
+                getResources().getColor(android.R.color.transparent));
         LayerDrawable ld = new LayerDrawable(new Drawable[]{colorDrawable, bottomDrawable});
-        if (oldBackground == null) {
+        if (getSupportActionBar() != null) {
             getSupportActionBar().setBackgroundDrawable(ld);
-        } else {
-            TransitionDrawable td = new TransitionDrawable(new Drawable[]{oldBackground, ld});
-            getSupportActionBar().setBackgroundDrawable(td);
-            td.startTransition(200);
         }
-
-        oldBackground = ld;
-        currentColor = newColor;
     }
 }
