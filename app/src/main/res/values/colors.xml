@@ -8,6 +8,8 @@
     <color name="color_transaction">@color/deep_orange_500</color>
     <color name="color_log">@color/teal_500</color>
 
+    <color name="card_background">@color/color_card_info</color>
+
 
     <!-- android material colors -->
     <color name="red_50">#ffebee</color>

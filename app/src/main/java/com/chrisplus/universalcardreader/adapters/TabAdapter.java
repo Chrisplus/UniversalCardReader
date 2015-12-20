@@ -1,5 +1,6 @@
 package com.chrisplus.universalcardreader.adapters;
 
+import com.chrisplus.universalcardreader.fragments.CardInfoFragment;
 import com.chrisplus.universalcardreader.fragments.GuideFragment;
 
 import android.support.v4.app.Fragment;
@@ -46,7 +47,8 @@ public class TabAdapter extends FragmentPagerAdapter {
 
     private void initFragments() {
         fragments = new ArrayList<>();
-        fragments.add(GuideFragment.newInstance(GuideFragment.GuideFragmentType.NO_CARD_DETECT));
+        //fragments.add(GuideFragment.newInstance(GuideFragment.GuideFragmentType.NO_CARD_DETECT));
+        fragments.add(new CardInfoFragment());
         fragments.add(GuideFragment.newInstance(GuideFragment.GuideFragmentType.NO_BALANCE_READ));
         fragments.add(GuideFragment.newInstance(GuideFragment.GuideFragmentType.NO_LOG_RECORD));
     }
