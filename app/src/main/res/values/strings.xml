@@ -4,4 +4,11 @@
     <string name="guide_no_card">No card detected, tap the card to the back of your phone.</string>
     <string name="guide_no_transaction">No transactions have been read.</string>
     <string name="guide_no_log">No log have been record.</string>
+
+    <string name="card_info_id_label">Card ID:</string>
+    <string name="card_info_type_label">Type:</string>
+    <string name="card_info_application_label">Application:</string>
+    <string name="card_info_proto_label">Protocol:</string>
+    <string name="card_info_rf_label">RF Tech:</string>
+    <string name="card_info_manufacturer">Manufacturer:</string>
 </resources>
