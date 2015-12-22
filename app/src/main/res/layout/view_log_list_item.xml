@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/card_item_bg">
+
+    <TextView
+            android:id="@+id/log_send_command"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="16sp"
+            android:textColor="@color/orange_700"
+            android:maxLines="10"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_action_send"
+            android:drawablePadding="4dp"/>
+
+    <TextView
+            android:id="@+id/log_receive_command"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="16sp"
+            android:textColor="@color/green_800"
+            android:maxLines="10"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_action_replay"
+            android:drawablePadding="4dp"/>
+
+</LinearLayout>

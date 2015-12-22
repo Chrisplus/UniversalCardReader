@@ -11,4 +11,9 @@
     <string name="card_info_proto_label">Protocol:</string>
     <string name="card_info_rf_label">RF Tech:</string>
     <string name="card_info_manufacturer">Manufacturer:</string>
+
+    <string name="balance_info_balance">$ %.2f</string>
+    <string name="balance_info_note_validity">Validity: %s - %s</string>
+    <string name="balance_info_note_no_read">Your card doesn't provide balance info.</string>
+
 </resources>
